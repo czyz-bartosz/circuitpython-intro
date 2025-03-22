@@ -66,3 +66,71 @@ Moduł jest pośrednikiem między displayio, a rgbmatrix. Zarządza framebuffere
 # Prosty przykład
 
 examples/REPLprint
+
+---
+
+# Więcej o displayio
+
+---
+
+# [Palette](https://docs.circuitpython.org/en/latest/shared-bindings/displayio/#displayio.Palette) - tablica kolorów
+
+```py
+palette = displayio.Palette(3)
+
+palette[0] = 0xFF0000 # red
+palette[1] = 0x00FF00 # green
+palette[2] = 0x0000FF # blue
+```
+
+---
+
+# [Bitmap](https://docs.circuitpython.org/en/latest/shared-bindings/displayio/#displayio.Bitmap) - tablica 2d wartości z Pallete
+
+```py
+#displayio.Bitmap(width: int, height: int, value_count: int)
+bitmap = displayio.Bitmap(320, 240, 3)
+
+#set all pixels with 1
+bitmap.fill(1)
+
+# set the pixel at (x, y) = (23, 42) to a value of 2
+bitmap[23, 42] = 2
+
+```
+
+---
+
+# Bitmap + Pallete
+
+![](images/circuitpython_bitmap_palette.png)
+
+---
+
+# [TileGrid](https://docs.circuitpython.org/en/latest/shared-bindings/displayio/#displayio.TileGrid) - siatka kafelków z bitmapy, łaczy wartości bitmapy z kolorami z Pallete
+
+![](images/circuitpython_tilegrid1.png)
+
+---
+
+![](images/circuitpython_tilegrid2.png)
+
+---
+
+# Jest to jak nieskończona wycinanka. Tniemy bitmape i układamy TileGrid.
+
+---
+
+# [Group](https://docs.circuitpython.org/en/latest/shared-bindings/displayio/#displayio.Group) - grupuje, łączy inne elementy, podobie jak znacznik div. Potrzebna nam jest do wyświetlenia.
+
+---
+
+![bg 80%](images/circuitpython_group1.png)
+
+---
+
+# Przykład
+
+examples/SpriteSheet inspiracja z tej [strony](https://learn.adafruit.com/circuitpython-display-support-using-displayio/sprite-sheet)
+
+![](images/circuitpython_spritesheet4.png)

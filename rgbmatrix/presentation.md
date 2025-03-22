@@ -134,3 +134,20 @@ bitmap[23, 42] = 2
 examples/SpriteSheet inspiracja z tej [strony](https://learn.adafruit.com/circuitpython-display-support-using-displayio/sprite-sheet)
 
 ![](images/circuitpython_spritesheet4.png)
+
+---
+
+# Przydatne biblioteki
+
+- [**adafruit_imageload**](https://docs.circuitpython.org/projects/imageload/en/latest/) - ładuje bitmape, pallete z pliku
+- [**adafruit_display_text**](https://docs.circuitpython.org/projects/display_text/en/latest/) - pomaga wyświetlić tekst
+- [**adafruit_display_shapes**](https://docs.circuitpython.org/projects/display-shapes/en/latest/) - pomaga wyświetlać figury
+
+---
+
+# Co jeśli to dla mnie za mało?
+
+- [displayio kurs](https://learn.adafruit.com/circuitpython-display-support-using-displayio/introduction)
+- [displayio docs](https://docs.circuitpython.org/en/latest/shared-bindings/displayio/#displayio.Group)
+- [rgbmatrix docs](https://docs.circuitpython.org/en/latest/shared-bindings/rgbmatrix/)
+- [framebufferio docs](https://docs.circuitpython.org/en/latest/shared-bindings/framebufferio/index.html)
